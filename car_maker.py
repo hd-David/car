@@ -9,5 +9,5 @@ companies = {
 app = Flask(__name__)
 
 @app.route("/company/<maker>")
-def hello_world(maker): #keys are an input and values as an output
+def hello_world(maker): #keys from the above dictionary as an input and values as an output
     return "{} has produced {} since it started operations".format(maker, str(companies[maker]))
